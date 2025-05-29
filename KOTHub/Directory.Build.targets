@@ -1,0 +1,12 @@
+<Project>
+    <Target Name="SetEfDefaults" BeforeTargets="PrepareForBuild">
+        <PropertyGroup>
+            <!-- Project chứa DbContext -->
+            <EfMigrationsProject>
+                $(MSBuildThisFileDirectory)Infrastructure\Infrastructure.csproj</EfMigrationsProject>
+
+            <!-- Startup project (có Program.cs) -->
+            <StartupProject>$(MSBuildThisFileDirectory)API\API.csproj</StartupProject>
+        </PropertyGroup>
+    </Target>
+</Project>

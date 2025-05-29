@@ -1,0 +1,17 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors />
+        <WarningsNotAsErrors>CS1591</WarningsNotAsErrors>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);CS1591</NoWarn>
+        <Version>1.0.0</Version>
+        <Authors>KOTHub Team</Authors>
+        <Company>KOTHub</Company>
+        <Product>KOTHub API</Product>
+        <Copyright>Copyright © KOTHub 2025</Copyright>
+    </PropertyGroup>
+</Project>
