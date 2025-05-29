@@ -9,7 +9,7 @@
 // /// Base controller providing common functionality for API controllers.
 // /// </summary>
 // [ApiController]
-// [Route("api/[controller]")]
+// [Route("[controller]")]
 // public abstract class BaseController : ControllerBase
 // {
 //     private readonly ILogger<BaseController> _logger;

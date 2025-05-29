@@ -10,9 +10,8 @@ public class KOTHubDbContext(DbContextOptions<KOTHubDbContext> options) : DbCont
     public DbSet<Team> Teams => Set<Team>();
     public DbSet<Player> Players => Set<Player>();
     public DbSet<PlayerTeam> PlayerTeams => Set<PlayerTeam>();
-    public DbSet<MatchEvent> MatchEvents => Set<MatchEvent>();
     public DbSet<MatchStats> MatchStats => Set<MatchStats>();
-    
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

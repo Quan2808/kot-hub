@@ -83,7 +83,6 @@ Migrations/
 # Environment
 .env
 .env.*
-appsettings.json
 
 # Node / npm (if used with frontend)
 node_modules/

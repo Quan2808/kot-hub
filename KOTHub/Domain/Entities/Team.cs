@@ -1,11 +1,18 @@
 ﻿namespace Domain.Entities;
 
-public class Team
-{
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public string LogoUrl { get; set; } = string.Empty;
-    public DateTime CreatedAt { get; set; }
+using Domain.Entities.Base;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-    public ICollection<PlayerTeam> PlayerTeams { get; set; } = [];
+public class Team : BaseEntity<int>
+{
+    [Required]
+    [MaxLength(100)]
+    public string Name { get; set; } = string.Empty;
+
+    [MaxLength(500)]
+    public string? LogoUrl { get; set; }
+
+    public ICollection<PlayerTeam> PlayerTeams { get; set; } = new List<PlayerTeam>();
 }
